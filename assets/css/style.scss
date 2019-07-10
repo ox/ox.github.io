@@ -85,8 +85,9 @@ small {
   font-size: var(--s-1)
 }
 
-pre {
+pre, code {
   font-family: Menlo, sans-serif;
+  overflow-x: scroll;
 }
 
 li {
@@ -94,11 +95,15 @@ li {
 }
 
 img {
+  display: block;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-pre {
-  overflow-x: scroll;
+figure figcaption {
+  font-size: var(--s-1);
+  text-align: center;
 }
 
 .link--post {
