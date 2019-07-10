@@ -1,3 +1,8 @@
-## The Start
-
-I want to use this space to write about what is on my mind and to explore various ideas and topics. Not sure what I will write about initially but look out for this space.
+# Posts
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <span>{{ post.date | date_to_string: "ordinal", "US" }} <a href="{{ post.url }}">{{ post.title }}</a></span>
+    </li>
+  {% endfor %}
+</ul>

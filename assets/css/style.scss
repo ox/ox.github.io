@@ -1,0 +1,22 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Add styles after this
+
+li {
+  list-style: square;
+}
+
+a:hover {
+  font-weight: initial;
+}
+
+h1 a {
+  font-weight: 700;
+
+  &:hover {
+    font-weight: 700;
+  }
+}
