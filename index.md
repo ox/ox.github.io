@@ -1,8 +1,12 @@
-# Posts
+## Posts
 <ul>
-  {% for post in site.posts %}
-    <li>
-      <span>{{ post.date | date_to_string: "ordinal", "US" }} <a href="{{ post.url }}">{{ post.title }}</a></span>
-    </li>
+  {% assign postsByYearMonth = site.posts | group_by_exp:"post", "post.date | date: '%Y %B'"  %}
+  {% for yearMonth in postsByYearMonth %}
+    <h3>{{ yearMonth.name }}</h3>
+      <ul>
+        {% for post in yearMonth.items %}
+          <li><a class="link--post" href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+      </ul>
   {% endfor %}
 </ul>

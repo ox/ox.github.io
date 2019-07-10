@@ -1,22 +1,116 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+:root {
+  /* Modular Scale */
+  --ratio: 1.5;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
 
-// Add styles after this
+  /* Font and Measure */
+  --font-size: calc(.333vw + 1em);
+  font-size: var(--font-size);
+  --measure: 65ch;
+  --line-height:var(--ratio);
+  line-height: var(--line-height);
+  --line-height-small:calc(0.75*var(--ratio));
+  --border-thin:var(--s-5);
+  --border-thick:var(--s-2);
+
+  /* Colors */
+  --color-dark:#050505;
+  --color-darkish:#404040;
+  --color-lightish:#e6e6e6;
+  --color-light:#fafafa;
+  --color-mid:grey;
+}
+
+/* Reset */
+*,:after,:before {
+  box-sizing: border-box;
+  background-color: inherit;
+  font-family: inherit;
+  color: inherit;
+  overflow-wrap: break-word;
+  margin: 0;
+  padding: 0;
+  border: 0 solid var(--color-dark)
+}
+
+body {
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;        
+  color: var(--color-darkest);
+}
+
+main {
+  max-width: var(--measure);
+  padding: var(--s3);
+  margin: auto;
+}
+
+[class^='stack'] > * {
+  margin: 0;
+}
+
+.stack--small > * + * {
+  margin-top: var(--s1);
+}
+
+.stack--large > * + * {
+  margin-top: var(--s3);
+}
+
+h1 {
+  font-size: var(--s3);
+}
+
+h2 {
+  font-size: var(--s2);
+}
+
+h3 {
+  font-size: var(--s1);
+}
+
+small {
+  font-size: var(--s-1)
+}
+
+pre {
+  font-family: Menlo, sans-serif;
+}
 
 li {
   list-style: square;
 }
 
-a:hover {
-  font-weight: initial;
+.link--post {
+  font-size: var(--s1);
 }
 
-h1 a {
-  font-weight: 700;
+a.button, button {
+  display: inline-block;
+  padding: var(--s-1);
+  background: var(--color-dark);
+  color: var(--color-light);
+  font-size: var(--s0);
+  text-decoration: none;
+}
 
-  &:hover {
-    font-weight: 700;
-  }
+a.button:hover, button:hover {
+  outline: var(--s-5) solid var(--color-mid);
+  outline-offset: var(--s-5);
+}
+
+a.button:focus, button:focus {
+  outline: var(--s-5) solid var(--color-dark);
 }
