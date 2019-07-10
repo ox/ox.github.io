@@ -5,7 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-{% seo %}
+    {% seo %}
+
+    {% if page.last_modified_at %}
+      <meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">
+    {% endif %}
+
+    {% if page.categories %}
+      {% for category in page.categories limit:1 %}
+    <meta property="article:section" content="{{ category }}">
+      {% endfor %}
+    {% endif %}
+
+    {% if page.tags %}
+      {% for tag in page.tags %}
+    <meta property="article:tag" content="{{ tag }}">
+      {% endfor %}
+    {% endif %}
+
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
