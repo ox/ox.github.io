@@ -2,7 +2,6 @@
 layout: post
 title:  "Projection Plotting"
 tags: [Plotter, 3D, Projection]
-last_modified_at: "2019-07-10"
 ---
 
 This post is a quick overview of my current experiment with projection plotting. The idea is to plot
