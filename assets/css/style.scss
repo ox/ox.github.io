@@ -53,7 +53,7 @@ body {
 
 main {
   max-width: var(--measure);
-  padding: var(--s3);
+  padding: var(--s2);
   margin: auto;
 }
 
@@ -91,6 +91,14 @@ pre {
 
 li {
   list-style: square;
+}
+
+img {
+  max-width: 100%;
+}
+
+pre {
+  overflow-x: scroll;
 }
 
 .link--post {
