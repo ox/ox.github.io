@@ -38,6 +38,22 @@ It's important to try to divide the grid evenly across the rendering so that the
 
 My initial prototype of drawing the dominant curve involved looping from N degrees to N + PI/2 (quarter of a circle) from the various corners of the tile. I divide the size of the tile by some variable that controls the desired number of lines to use per curve to get the spacing between each line.
 
+```js
+const curveDensity = 7;
+const radiusChange = this.size / curveDensity;
+for (let r = 0; r < this.size; r += radiusChange) {
+  beginShape();
+  // 0.06 is an arbitrarily small number to increment
+  // the degress to progress at each step.
+  for (let i = start; i < start + PI / 2; i += 0.06) {
+    const x = dominantCorner.x + r * cos(i);
+    const y = dominantCorner.y + r * sin(i);
+    vertex(x, y);
+  }
+  endShape();
+}
+```
+
 To draw the curve "underneath" the dominant curve from the opposite corner requires a similar technique. However, we must check that we are not drawing past the furthest line in the dominant curve. So before a point is added to the underside curve we must check if it's distance is less than the size of the tile.
 
 There is some book-keeping that needs to be done to make sure that you call `endShape()` when the point cannot be drawn, and calling `beginShape()` when the underside curve starts "peeking out" from the dominant curve. If you don't keep your shapes clean then the lines of the underside curve will look very blocky.
