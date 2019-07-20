@@ -105,6 +105,17 @@ img.cap-height {
   max-height: 400px;
 }
 
+.image-group--row {
+  display: flex;
+  justify-content: space-between;
+
+  img {
+    flex: 1;
+    max-width: 24%;
+    border: var(--border-thin) solid var(--color-dark);
+  }
+}
+
 figure figcaption {
   font-size: var(--s-1);
   text-align: center;
