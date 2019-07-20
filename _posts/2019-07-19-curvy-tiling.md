@@ -14,7 +14,7 @@ I was browsing around #plottertwitter when I stumbled across this gorgeous illus
 
 After staring at the work for a few minutes I started to notice that all of the centers of the swirls were evenly spaced; tiled. There were also no straight segments. Each curve tile either turned left or right in it's space between four centers. I was thinking maybe there was some kind of random walker that started somewhere and just walked randomly left or right relative to the previous block's center. This still seemed fairly involved and I couldn't tell how the next randomly placed walker start point would fit with the existing path.
 
-I started looking at each tile and noticed there were only four different kinds of tiles. Each tile had a dominant curve that followed one corner of the tile, while a weaker curve underneath it followed the opposite corner.
+I started looking at each tile and realized that four different kinds of tiles were used repeatedly across the image. Each tile had a dominant curve that followed one corner of the tile, while a weaker curve underneath it followed the opposite corner.
 
 <div class="image-group--row">
   <img src="/assets/images/curvy-tiling/top-left.png">
@@ -32,7 +32,7 @@ Notice that any of the pieces can tessellate with the others, thus we can create
   </figcaption>
 </figure>
 
-It's important to try to divide the grid evenly across the rendering so that the edges of the tiles line up with the edges of the image. Logan even [notes](https://twitter.com/__lw/status/1147916923079802880) that he creates a 2mm bleed (empty space) with crop point and trims the paper after the lines are drawn.
+It's important to try to divide the grid evenly across the rendering so that the edges of the tiles line up with the edges of the image. Logan even [notes](https://twitter.com/__lw/status/1147916923079802880) that he creates a 2mm bleed (empty space) with crop point and trims the paper after the lines are drawn to create the even edge-to-edge effect.
 
 ### Calculating tile curves
 
