@@ -101,9 +101,21 @@ img {
   margin-right: auto;
 }
 
+img.cap-height {
+  max-height: 400px;
+}
+
 figure figcaption {
   font-size: var(--s-1);
   text-align: center;
+}
+
+@media only screen and (min-width: 100ch) {
+  figure.image--inline-left {
+    float: left;
+    margin-left: calc(-1 * var(--s1));
+    margin-right: var(--s1);
+  }
 }
 
 .link--post {
