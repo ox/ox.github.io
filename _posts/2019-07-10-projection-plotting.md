@@ -8,7 +8,7 @@ This post is a quick overview of my current experiment with projection plotting.
 lines in 3D onto a 2D plane with some perpsective.
 
 <figure>
-  <img src="/assets/images/projection1.svg">
+  <img src="/assets/images/projection-plotting/projection1.svg">
   <figcaption><a href="https://glitch.com/~projection1">projection1</a></figcaption>
 </figure>
 
@@ -36,7 +36,7 @@ After being able to generate some identical boxes I moved on to morphing the box
 I experimented with increasing the height as more boxes were added:
 
 <figure>
-  <img src="/assets/images/projection2.svg">
+  <img src="/assets/images/projection-plotting/projection2.svg">
   <figcaption><a href="https://glitch.com/~projection2">projection2</a></figcaption>
 </figure>
 
@@ -44,7 +44,7 @@ Now the lines in the boxes are much more dense in the middle as they start to ov
 each other. There are some interesting effects when some of the lines are removed:
 
 <figure>
-  <img src="/assets/images/projection3.svg">
+  <img src="/assets/images/projection-plotting/projection3.svg">
   <figcaption><a href="https://glitch.com/~projection2-5">projection2-5</a></figcaption>
 </figure>
 
