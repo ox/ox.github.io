@@ -48,7 +48,7 @@
 
 body {
   font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;        
-  color: var(--color-darkest);
+  color: var(--color-dark);
 }
 
 main {
@@ -71,18 +71,22 @@ main {
 
 h1 {
   font-size: var(--s3);
+  font-variant-caps: all-small-caps;
 }
 
 h2 {
   font-size: var(--s2);
+  font-variant-caps: all-small-caps;
 }
 
 h3 {
   font-size: var(--s1);
+  font-variant-caps: all-small-caps;
 }
 
 small {
-  font-size: var(--s-1)
+  font-size: var(--s-1);
+  font-variant-caps: all-small-caps;
 }
 
 pre, code {
