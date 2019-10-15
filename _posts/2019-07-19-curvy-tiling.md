@@ -16,7 +16,7 @@ After staring at the work for a few minutes I started to notice that all of the 
 
 I started looking at each tile and realized that four different kinds of tiles were used repeatedly across the image. Each tile had a dominant curve that followed one corner of the tile, while a weaker curve underneath it followed the opposite corner.
 
-<div class="image-group--row">
+<div class="image-group--row four-per-row">
   <img src="/assets/images/curvy-tiling/top-left.png">
   <img src="/assets/images/curvy-tiling/top-right.png">
   <img src="/assets/images/curvy-tiling/bottom-right.png">
