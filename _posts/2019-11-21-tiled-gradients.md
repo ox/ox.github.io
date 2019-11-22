@@ -35,4 +35,4 @@ Further directions for exploration:
 - selectively combining adjacent tiles
 - changing the way the `density` value is drawn in the tile, either by changing drawing direction or distribution
 
-You can play with the by remixing [the project on Glitch](https://glitch.com/~tiled-gradient-1)!
+Remix [the project on Glitch](https://glitch.com/~tiled-gradient-1)!
