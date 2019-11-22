@@ -29,3 +29,10 @@ I then substituted pure randomness for some Perlin noise which sampled the top-l
 <figure>
   <img src="/assets/images/tiled-gradients/rendering-tiled-gradient-1-1574376286490.svg">
 </figure>
+
+Further directions for exploration:
+
+- selectively combining adjacent tiles
+- changing the way the `density` value is drawn in the tile, either by changing drawing direction or distribution
+
+You can play with the by remixing [the project on Glitch](https://glitch.com/~tiled-gradient-1)!
