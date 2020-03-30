@@ -5,7 +5,7 @@ tags: []
 unlisted: true
 ---
 
-I'm looking for a responsible roommate to fill a spacious bedroom in my lovely 2 bedroom Williamsburg apartment. The apartment is on the top floor of a 3-storey building on [the corner of Humboldt St and Withers St](https://goo.gl/maps/wsAyYjSGAwtBURZu5). The rent is <b>$1,200/mo</b>, month to month, plus utilities (seasonal, ~$50/mo, heat + hot water included).
+I'm looking for a responsible roommate to fill a spacious bedroom in my lovely 2 bedroom Williamsburg apartment. The apartment is on the top floor of a 3-storey building on [the corner of Humboldt St and Withers St](https://goo.gl/maps/oZ1mtzXwerkgVVmd8). The rent is <b>$1,200/mo</b>, month to month, plus utilities (seasonal, ~$50/mo, heat + hot water included).
 
 #### The Space
 
