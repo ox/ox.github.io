@@ -86,13 +86,19 @@ small {
   font-variant-caps: all-small-caps;
 }
 
+strong {
+  font-size: var(--s0);
+  font-weight: 700;
+  vertical-align: bottom;
+}
+
 pre, code {
   font-family: Menlo, sans-serif;
   overflow-x: scroll;
 }
 
 li {
-  list-style: square;
+  list-style: none;
 }
 
 img {
