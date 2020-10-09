@@ -1,0 +1,23 @@
+---
+---
+
+.posts {
+  .story {
+    color: var(--color-darkish);
+    font-size: var(--s0);
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: var(--color-dark);
+      text-decoration: underline;
+    }
+  }
+
+  .link--post {
+    font-weight: 700;
+  }
+}

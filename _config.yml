@@ -1,2 +1,5 @@
 title: Artem at Large
 description: Thoughts and scratches about computers, generative art, and plotter printers.
+collections:
+  stories:
+    output: true
