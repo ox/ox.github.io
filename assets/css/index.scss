@@ -5,6 +5,20 @@
   .story {
     color: var(--color-darkish);
     font-size: var(--s0);
+
+    .toggle {
+      display: none;
+    }
+
+    .collabsible-content {
+      max-height: 0px;
+      overflow: hidden;
+      transition: max-height 0.25s ease-in-out;
+    }
+
+    .toggle:checked + label + .collabsible-content {
+      max-height: 350px;
+    }
   }
 
   a {

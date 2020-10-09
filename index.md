@@ -8,8 +8,11 @@
     {% for post in visiblePosts %}
       {% if post.story %}
         <li class="story">
-          {{post.date | date: "%b %d, %Y" }} {{post.kind}}: <a href="{{ post.url }}"><b>{{ post.title | upcase }}</b></a>
-          {{post.content | trim}}
+          <input type="checkbox" class="toggle" id="{{post.url}}" checked/>
+          {{post.date | date: "%b %d, %Y" }} {{post.kind}}: <label for="{{post.url}}"><b>{{ post.title | upcase }}</b></label>
+          <div class="collabsible-content">
+            {{post.content | trim}}
+          </div>
         </li>
       {% else %}
         <li><a class="link--post" href="{{ post.url }}">{{ post.title }}</a></li>
@@ -17,3 +20,7 @@
     {% endfor %}
   </ul>
 </div>
+
+<script>
+  
+</script>
