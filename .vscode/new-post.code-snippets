@@ -11,5 +11,18 @@
 			"",
 			"$0"
 		]
+	},
+	"Start a new story": {
+		"scope": "markdown",
+		"prefix": "newstory",
+		"body": [
+			"---",
+			"layout: post",
+			"story: true",
+			"kind: DEVLOG",
+			"---",
+			"",
+			"$0"
+		]
 	}
 }

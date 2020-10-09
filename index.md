@@ -11,7 +11,7 @@
           <input type="checkbox" class="toggle" id="{{post.url}}" checked/>
           {{post.date | date: "%b %d, %Y" }} {{post.kind}}: <label for="{{post.url}}"><b>{{ post.title | upcase }}</b></label>
           <div class="collabsible-content">
-            {{post.content | trim}}
+            {{post.content}}
           </div>
         </li>
       {% else %}
