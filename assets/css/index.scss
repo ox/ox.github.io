@@ -21,17 +21,14 @@
     }
   }
 
-  a {
+  .link--post {
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 700;
 
     &:hover {
       color: var(--color-dark);
       text-decoration: underline;
     }
-  }
-
-  .link--post {
-    font-weight: 700;
   }
 }
