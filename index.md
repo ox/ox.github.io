@@ -21,6 +21,3 @@
   </ul>
 </div>
 
-<script>
-  
-</script>
