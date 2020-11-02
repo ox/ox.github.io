@@ -2,6 +2,10 @@
 ---
 
 .posts {
+  li + li {
+    margin-top: var(--s0);
+  }
+
   .story {
     color: var(--color-darkish);
     font-size: var(--s0);
@@ -16,7 +20,7 @@
       transition: max-height 0.25s ease-in-out;
     }
 
-    .toggle:checked + label + .collabsible-content {
+    .toggle:checked + * + .collabsible-content {
       max-height: 350px;
     }
   }

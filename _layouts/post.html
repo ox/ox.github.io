@@ -2,17 +2,21 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
-{% if page.subtitle %}
-<h4>{{ page.subtitle }}</h4>
-{% endif %}
-<small>Posted: {{ page.date | date: "%-d %B %Y" }},</small>
-{% if page.last_modified_at %}
-<small>Updated: {{ page.last_modified_at | date: "%-d %B %Y" }},</small>
-{% endif %}
+<div class="stack--small">
+  <h2>{{ page.title }}</h2>
+  {% if page.subtitle %}
+  <h4>{{ page.subtitle }}</h4>
+  {% endif %}
+  <small>Posted: {{ page.date | date: "%-d %B %Y" }},</small>
+  {% if page.last_modified_at %}
+  <small>Updated: {{ page.last_modified_at | date: "%-d %B %Y" }},</small>
+  {% endif %}
 
-{% if page.tags %}
-  <small>Tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
-{% endif %}
+  {% if page.tags %}
+    <small>Tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+  {% endif %}
+</div>
 
-{{content}}
+<div class="content stack--small">
+  {{content}}
+</div>

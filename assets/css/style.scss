@@ -52,9 +52,12 @@ body {
 }
 
 main {
-  max-width: var(--measure);
-  padding: var(--s2);
-  margin: auto;
+  padding-top: var(--s2);
+  padding-bottom: var(--s3);
+}
+
+header h1 {
+  margin-bottom: var(--s1);
 }
 
 [class^='stack'] > * {
@@ -71,6 +74,7 @@ main {
 
 h1 {
   font-size: var(--s3);
+  line-height: var(--s3);
 }
 
 h2 {
@@ -94,10 +98,9 @@ strong {
 
 pre, code {
   font-family: Menlo, sans-serif;
-  overflow-x: scroll;
 }
 
-li {
+ul > li {
   list-style: none;
 }
 
@@ -173,4 +176,19 @@ a.button:hover, button:hover {
 
 a.button:focus, button:focus {
   outline: var(--s-5) solid var(--color-dark);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr min(60ch, calc(100% - 2 * var(--s1) )) 1fr;
+  grid-column-gap: var(--s1);
+}
+
+.container > * {
+  grid-column: 2;
+}
+
+.container pre {
+  grid-column: 2 / 4;
+  overflow-x: auto;
 }

@@ -9,13 +9,13 @@
       {% if post.story %}
         <li class="story">
           <input type="checkbox" class="toggle" id="{{post.url}}" checked/>
-          {{post.date | date: "%b %d, %Y" }} {{post.kind}}: <label for="{{post.url}}"><b>{{ post.title | upcase }}</b></label>
+          <strong>{{post.date | date: "%b %d, %Y" }} {{post.kind}}: <label for="{{post.url}}"><b>{{ post.title | upcase }}</b></label></strong>
           <div class="collabsible-content">
             {{post.content}}
           </div>
         </li>
       {% else %}
-        <li><a class="link--post" href="{{ post.url }}">{{ post.title }}</a></li>
+        <li class="post"><a class="link--post" href="{{ post.url }}">{{ post.title }}</a></li>
       {% endif %}
     {% endfor %}
   </ul>
